@@ -1,0 +1,109 @@
+.footer {
+    padding: 20px 10px;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism effect */
+    backdrop-filter: blur(10px);
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Subtle border */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+    text-align: center;
+    color: rgb(116, 6, 6);
+  }
+  
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-content p {
+    font-size: 1rem; /* Responsive text size */
+    margin: 10px 0;
+    color: #b2b2b2; /* Subtle text color */
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+    margin-top: 10px;
+    flex-wrap: wrap; /* Allow icons to wrap on smaller screens */
+  }
+  
+  .social-icons .icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #00c6ff; /* Futuristic blue border */
+    border-radius: 50%;
+    font-size: 1.2rem; /* Responsive font size */
+    color: #00c6ff;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .social-icons .icon:hover {
+    background: #00c6ff; /* Icon background on hover */
+    color: white; /* White text on hover */
+    transform: scale(1.2); /* Zoom effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 198, 255, 0.5); /* Glow effect */
+  }
+  
+  .footer-links {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Wrap links on smaller screens */
+    gap: 15px; /* Space between links */
+  }
+  
+  .footer-links a {
+    color: #b2b2b2;
+    text-decoration: none;
+    font-size: 1rem; /* Responsive font size */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #00c6ff; /* Highlight link on hover */
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  /* Adjust for tablets and small devices */
+  @media (max-width: 768px) {
+    .footer-content p {
+      font-size: 0.9rem;
+    }
+  
+    .social-icons .icon {
+      width: 35px;
+      height: 35px;
+      font-size: 1rem;
+    }
+  
+    .footer-links a {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Adjust for mobile devices */
+  @media (max-width: 480px) {
+    .footer-content p {
+      font-size: 0.8rem;
+    }
+  
+    .social-icons {
+      gap: 10px; /* Reduce space between icons */
+    }
+  
+    .social-icons .icon {
+      width: 30px;
+      height: 30px;
+      font-size: 0.9rem;
+    }
+  
+    .footer-links a {
+      font-size: 0.8rem;
+    }
+  }
+  

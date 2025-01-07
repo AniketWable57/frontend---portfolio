@@ -1,0 +1,99 @@
+/* Base Styles */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(17, 17, 17, 0.8); /* Slightly darker for a futuristic look */
+    backdrop-filter: blur(15px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease; /* Smooth transition for interactions */
+  }
+  
+  /* Logo */
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #00c6ff; /* Futuristic blue */
+    text-shadow: 0 4px 10px rgba(0, 198, 255, 0.6); /* Glow effect */
+    transition: transform 0.3s ease;
+  }
+  
+  .logo:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+  }
+  
+  /* Navigation Links */
+  .nav {
+    display: flex;
+    gap: 20px; /* Space between nav items */
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav a::after {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #00c6ff; /* Blue underline effect */
+    transition: width 0.3s ease;
+  }
+  
+  .nav a:hover {
+    color: #00c6ff;
+    transform: translateY(-2px); /* Subtle lift effect */
+  }
+  
+  .nav a:hover::after {
+    width: 100%; /* Full underline on hover */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .header {
+      padding: 10px 20px; /* Smaller padding for tablets */
+    }
+  
+    .logo {
+      font-size: 1.5rem; /* Adjust logo size */
+    }
+  
+    .nav a {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header {
+      flex-direction: column; /* Stack logo and nav vertically */
+      align-items: center;
+      padding: 10px 15px;
+    }
+  
+    .logo {
+      margin-bottom: 10px; /* Space below logo */
+      font-size: 1.4rem; /* Smaller font size */
+    }
+  
+    .nav {
+      gap: 15px; /* Reduced gap between nav items */
+    }
+  
+    .nav a {
+      font-size: 0.9rem; /* Smaller nav font size */
+    }
+  }
+  

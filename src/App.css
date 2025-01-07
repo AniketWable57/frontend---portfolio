@@ -1,0 +1,20 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure the body takes up the full height of the viewport */
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure the app takes up the full height */
+}
+
+.content {
+  flex: 1; /* Allow the content to expand and push the footer to the bottom */
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: #ffffff;
+}
